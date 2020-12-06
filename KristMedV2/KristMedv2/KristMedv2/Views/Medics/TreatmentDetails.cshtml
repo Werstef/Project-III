@@ -1,0 +1,32 @@
+﻿@model KristMedv2.Models.Medics.MedicTreatmentDetailsViewModel
+@{
+    ViewData["Title"] = "TreatmentDetails";
+}
+<link rel="stylesheet" type="text/css" href="~/css/table.css?v=<%= DateTime.Now.Ticks %" />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h1 class="title">TreatmentDetails</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Client Last Name</th>
+            <th>Client First Name</th>
+            <th>Diagnosis</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Treatment.Client.LastName</td>
+            <td>@Model.Treatment.Client.FirstName</td>
+            <td>@Model.Treatment.Diagnosis</td>
+        </tr>
+    </tbody>
+
+</table>
+
+

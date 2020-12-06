@@ -1,0 +1,63 @@
+﻿@using KristMedv2.Models.Clients;
+@model ClientSearchAppointmentsViewModel;
+@{
+    ViewData["Title"] = "SearchAppointments";
+}
+    <head>
+        <link rel="stylesheet" type="text/css" href="~/css/table.css?v=<%= DateTime.Now.Ticks %" />
+
+
+    </head>
+    <body>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1 class="title">Search Appointments</h1>
+
+
+        <div style="margin-left:15px">
+            @using (Html.BeginForm("SearchAppointments", "Clients", FormMethod.Get))
+            {
+                <br>
+                <b>Search By:</b>
+                <br>
+                @Html.RadioButton("searchBy", "Medic", true) <text> Medic Last Name </text>
+                <br>
+                @Html.RadioButton("searchBy", "NoFilter", true) <text> NoFilter</text>
+                <br>
+                @Html.TextBox("search")
+                <input type="submit" value="Search" />
+                <br>
+                <br>
+            }
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Medic Last Name</th>
+                    <th>Medic First Name</th>
+                    <th>Date</th>
+                    <th>Duration</th>
+                    <th>Make Appointment</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach (var appointment in Model.Appointments)
+                {
+                    <tr>
+                        <td>@appointment.Medic.LastName</td>
+                        <td>@appointment.Medic.FirstName</td>
+                        <td>@appointment.Date</td>
+                        <td>@appointment.Duration</td>
+                        <td><a asp-controller="Clients" asp-action="MakeAppointment" asp-route-Id="@appointment.Id">Make Appointment</a></td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </body>
+

@@ -1,0 +1,58 @@
+﻿@using KristMedv2.Models.Admins;
+@model AdminEditAccountViewModel;
+@{
+    ViewData["Title"] = "EditAccount";
+}
+
+    <link rel="stylesheet" href="~/css/addForm.css?v=<%= DateTime.Now.Ticks %" />
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KristMed</title>
+
+</head>
+
+<body>
+    <div style="text-align:center">
+        <br>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2 style="text-align: center;">Edit Account</h2>
+        <br>
+        <form asp-action="EditAccount" method="post">
+            <div class="labels">
+                <input hidden asp-for="UserId" />
+
+                <label for="FirstName"><b>First Name:</b></label>
+                <input asp-for="FirstName" class="boxes" type="text" placeholder="FirstName..." name="FirstName"><br>
+
+                <label for="LastName"><b>Last Name:</b></label>
+                <input asp-for="LastName" class="boxes" type="text" placeholder="LastName..." name="LastName"><br>
+
+                <label for="Username"><b>Username:</b></label>
+                <input asp-for="Username" class="boxes" type="text" placeholder="Username..." name="Username"><br>
+
+                <label for="Email"><b>Email:</b></label>
+                <input asp-for="Email" class="boxes" type="text" placeholder="Email..." name="Email"><br>
+
+                <br>
+            </div>
+            <br>
+            <br>
+            <button type="submit" class="buttons">Save</button>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
+
+
+

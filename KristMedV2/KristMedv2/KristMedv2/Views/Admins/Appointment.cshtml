@@ -1,0 +1,43 @@
+﻿@model KristMedv2.Models.Admins.AdminAppointmentViewModel
+
+@{
+    ViewData["Title"] = "Appointment";
+}
+
+<link rel="stylesheet" href="~/css/table.css?v=<%= DateTime.Now.Ticks %" />
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<h1 class="title">Appointments</h1>
+
+<p style="text-align:center">
+    <a href='@Url.Action("AddAppointment", "Admins")'>Add Appointment</a>
+</p>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Duration</th>
+            <th>Medic Last Name</th>
+            <th>Medic First Name</th>
+            <th>Admin Id</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var appointment in Model.Appointments)
+        {
+            <tr>
+                <td>@appointment.Date</td>
+                <td>@appointment.Duration</td>
+                <td>@appointment.Medic.LastName</td>
+                <td>@appointment.Medic.FirstName</td>
+                <td>@appointment.Admin.Id</td>
+            </tr>
+        }
+    </tbody>
+
+</table>

@@ -1,0 +1,67 @@
+﻿@using KristMedv2.Models.Admins;
+@model AdminAddMedicineViewModel;
+@{
+    ViewData["Title"] = "AddMedicine";
+}
+
+    <link rel="stylesheet" href="~/css/addForm.css?v=<%= DateTime.Now.Ticks %" />
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Krist Med</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\Werstef\source\repos\KristMedv2\KristMedv2\wwwroot\css\Contact.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+
+    <div style="text-align:center">
+
+        <br>
+        <br>
+        <br>
+       
+        <br>
+
+
+        <div class="content">
+          
+            <hr style="color:#0099ff">
+
+            <h3 class="title">Add Medicine Type</h3>
+
+
+
+
+            <div class="form">
+                <form asp-action="AddMedicine" method="post">
+                    <div id="content_info">
+                        <label for="Name"><p class="contact_form">Nume Medicament<span class="required">*</span></p></label>
+                        <input asp-for="Name" class="boxes" type="text" id="full_name" name="Name" placeholder="Nume Medicament..." required><br>
+                        <label for="Manufacturer"><p class="contact_form">Producator<span class="required">*</span></p></label>
+                        <input asp-for="Manufacturer" class="boxes" type="text" id="email" name="Manufacturer" placeholder="Producator" required><br>
+                        <label for="QuantityStock"><p class="contact_form">Stoc Valabil<span class="required">*</span></p></label>
+                        <input asp-for="QuantityStock" class="boxes" type="number" id="subiect" name="QuantityStock" placeholder="Stoc..." required><br>
+                        <label for="ExpirationDate"><p class="contact_form">Data Expirarii<span class="required">*</span></p></label>
+                        <input asp-for="ExpirationDate" id="descriere" type="date" rows="15" cols="50" name="ExpirationDate"><br>
+                    </div>
+                    <br>
+                    <div class="content_sent">
+                        <button type="submit" class="buttons">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+﻿@using KristMedv2.Models.Admins;
+@model AdminAddAppointmentViewModel;
+@{
+    ViewData["Title"] = "AddAppointment";
+}
+
+    <link rel="stylesheet" href="~/css/addForm.css?v=<%= DateTime.Now.Ticks %" />
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Krist Med</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+
+    <div style="text-align:center">
+        <br />
+        <br />
+        <br>
+        <br>
+        <br>
+        <h2 style="text-align: center;">Add Appointment</h2>
+        <br>
+        <form asp-action="AddAppointment" method="post">
+            <div class="labels">
+
+                <label for="Duration"><b>Duration:</b></label>
+                <input asp-for="Duration" class="boxes" type="number" placeholder="Duration..." name="Duration"><br>
+
+                <label for="Date"><b>Date:</b></label>
+                <input asp-for="Date" class="boxes" type="date" asp-format="{0:yyyy-MM-dd}" name="Date"><br>
+
+                <label for="Medic"><b>Medic:</b></label>
+                <select class="boxes" asp-for="Medic" asp-items="@Model.Medics">
+                    <option value="">Please Select</option>
+                </select><br>
+
+                <br>
+            </div>
+            <br>
+            <button type="submit" class="buttons">Add Appointment</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

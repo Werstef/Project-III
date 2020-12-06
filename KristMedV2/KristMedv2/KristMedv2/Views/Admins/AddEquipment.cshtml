@@ -1,0 +1,58 @@
+﻿@using KristMedv2.Models.Admins;
+@model AdminAddEquipmentViewModel;
+@{
+    ViewData["Title"] = "AddEquipment";
+}
+
+    <link rel="stylesheet" href="~/css/addForm.css?v=<%= DateTime.Now.Ticks %" />
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Krist Med</title>
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+
+    <div style="text-align:center">
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="content">
+            <hr style="color:#0099ff">
+
+            <h3 class="title">Add Equipment Type</h3>
+
+
+            <div class="form">
+                <form asp-action="AddEquipment" method="post">
+                    <div id="content_info">
+                        <label for="Name"><p class="contact_form">Nume Echipament<span class="required">*</span></p></label>
+                        <input asp-for="Name" class="boxes" type="text" id="full_name" name="Name" placeholder="Nume Medicament..." required><br>
+                        <label for="Manufacturer"><p class="contact_form">Producator<span class="required">*</span></p></label>
+                        <input asp-for="Manufacturer" class="boxes" type="text" id="email" name="Manufacturer" placeholder="Producator" required><br>
+                        <label for="UsageTime"><p class="contact_form">Timpul de folosinta<span class="required">*</span></p></label>
+                        <input asp-for="UsageTime" class="boxes" type="number" id="subiect" name="UsageTime" placeholder="UsageTime..." required><br>
+                    </div>
+                    <br>
+                    <div>
+                        @*<input class="buttons" type="submit" value="Send"><br>*@
+                        <button type="submit" class="buttons">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

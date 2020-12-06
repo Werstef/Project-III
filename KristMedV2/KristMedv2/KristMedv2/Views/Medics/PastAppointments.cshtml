@@ -1,0 +1,38 @@
+﻿@model KristMedv2.Models.Medics.MedicPastAppointmentsViewModel
+@{
+    ViewData["Title"] = "PastAppointments";
+}
+<link rel="stylesheet" type="text/css" href="~/css/table.css?v=<%= DateTime.Now.Ticks %" />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h1 class="title">Past Appointments</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Client First Name</th>
+            <th>Client Last Name</th>
+            <th>Duration(h)</th>
+            <th>Date</th>
+            <th>Treatment</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var appointments in Model.PastAppointments)
+        {
+            <tr>
+                <td>@appointments.Client.FirstName</td>
+                <td>@appointments.Client.LastName</td>
+                <td>@appointments.Duration</td>
+                <td>@appointments.Date</td>
+                <td><a asp-controller="Medics" asp-action="AddTreatment" asp-route-Id="@appointments.Id">Add Treatment</a></td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+

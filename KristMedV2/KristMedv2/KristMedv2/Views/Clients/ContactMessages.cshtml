@@ -1,0 +1,40 @@
+﻿@model KristMedv2.Models.Clients.ClientContactMessagesViewModel
+
+@{
+    ViewData["Title"] = "ContactMessages";
+}
+<link rel="stylesheet" type="text/css" href="~/css/table.css?v=<%= DateTime.Now.Ticks %" />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h1 class="title">Contact Messages</h1>
+
+
+<p style="text-align:center">
+    <a href='@Url.Action("AddContactMessage", "Clients")'>Add Contact Message</a>
+</p>
+<table>
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Client Id</th>
+            <th>Message Text</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var contactMessage in Model.ContactMessages)
+        {
+            <tr>
+                <td>@contactMessage.FullName</td>
+                <td>@contactMessage.Email</td>
+                <td>@contactMessage.Client.Id</td>
+                <td>@contactMessage.MessageText</td>
+            </tr>
+        }
+    </tbody>
+
+</table>

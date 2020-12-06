@@ -1,0 +1,40 @@
+﻿@model KristMedv2.Models.Admins.AdminMedicineViewModel
+
+@{
+    ViewData["Title"] = "Medicine";
+}
+
+<link rel="stylesheet" href="~/css/table.css?v=<%= DateTime.Now.Ticks %" />
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 class="title">Medicine</h1>
+
+<p style="text-align:center">
+    <a href='@Url.Action("AddMedicine", "Admins")'>Add Medicine</a>
+</p>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Manufacturer</th>
+            <th>QuantityStock</th>
+            <th>ExpirationDate</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var medicationType in Model.MedicationTypes)
+        {
+            <tr>
+                <td>@medicationType.Name</td>
+                <td>@medicationType.Manufacturer</td>
+                <td>@medicationType.QuantityStock</td>
+                <td>@medicationType.ExpirationDate</td>
+            </tr>
+        }
+    </tbody>
+
+</table>

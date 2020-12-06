@@ -1,0 +1,42 @@
+﻿@model KristMedv2.Models.Medics.MedicAddTreatmentViewModel
+@{
+    ViewData["Title"] = "AddTreatment";
+}
+<link rel="stylesheet" href="~/css/addForm.css?v=<%= DateTime.Now.Ticks %" />
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<h2 style="text-align: center;">Add Treatment</h2>
+<br>
+<form asp-action="AddTreatment" method="post">
+    <div class="labels">
+        <input hidden asp-for="AppointmentId" />
+        <input hidden asp-for="ClientId" />
+        <input hidden asp-for="MedicId" />
+        <label for="Diagnosis"><b>Diagnosis:</b></label>
+        <textarea asp-for="Diagnosis" id="Diagnosis" rows="15" cols="50" placeholder="Diagnostic..."></textarea><br>
+
+        <label for="Equipment"><b>Equipment:</b></label>
+        <select asp-for="Equipment" asp-items="@Model.Equipments">
+            <option value="">Please Select</option>
+        </select><br>
+
+        <label for="EquipmentUsageTime"><b>EquipmentUsageTime:</b></label>
+        <input asp-for="EquipmentUsageTime" class="boxes" type="number" placeholder="EquipmentUsageTime..." name="EquipmentUsageTime"><br>
+
+        <label for="Medication"><b>Medication:</b></label>
+        <select asp-for="Medication" asp-items="@Model.Medications">
+            <option value="">Please Select</option>
+        </select><br>
+
+        <label for="MedicationQuantityUsed"><b>MedicationQuantityUsed:</b></label>
+        <input asp-for="MedicationQuantityUsed" class="boxes" type="number" placeholder="MedicationQuantityUsed..." name="MedicationQuantityUsed"><br>
+    </div>
+
+    <button type="submit" class="buttons">Add Treatment</button>
+</form>
+

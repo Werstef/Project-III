@@ -1,0 +1,38 @@
+﻿@model KristMedv2.Models.Admins.AdminEquipmentViewModel
+
+@{
+    ViewData["Title"] = "Equipment";
+}
+<link rel="stylesheet" href="~/css/table.css?v=<%= DateTime.Now.Ticks %" />
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 class="title">Equipment</h1>
+
+<p style="text-align:center">
+    <a href='@Url.Action("AddEquipment", "Admins")'>Add Equipment</a>
+</p>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Manufacturer</th>
+            <th>Usage Time</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var equipment in Model.EquipmentTypes)
+        {
+            <tr>
+                <td>@equipment.Name</td>
+                <td>@equipment.Manufacturer</td>
+                <td>@equipment.UsageTimeAvailable</td>
+            </tr>
+        }
+    </tbody>
+
+</table>

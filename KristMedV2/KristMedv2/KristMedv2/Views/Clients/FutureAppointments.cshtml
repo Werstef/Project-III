@@ -1,0 +1,40 @@
+﻿@model KristMedv2.Models.Clients.ClientFutureAppointmentsViewModel
+@{
+    ViewData["Title"] = "FutureAppointments";
+}
+<link rel="stylesheet" type="text/css" href="~/css/table.css?v=<%= DateTime.Now.Ticks %" />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h1 class="title">FutureAppointments</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Medic First Name</th>
+            <th>Medic Last Name</th>
+            <th>Duration(h)</th>
+            <th>Date</th>
+            <th>Delete</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var appointment in Model.FutureAppointments)
+        {
+            <tr>
+                <td>@appointment.Medic.FirstName</td>
+                <td>@appointment.Medic.LastName</td>
+                <td>@appointment.Duration</td>
+                <td>@appointment.Date</td>
+                <td>
+                    <a asp-controller="Clients" asp-action="DeleteAppointment" asp-route-Id="@appointment.Id"
+                       onclick="return confirm('Are you sure you want to delete appointment with Medic: @appointment.Medic.LastName')">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

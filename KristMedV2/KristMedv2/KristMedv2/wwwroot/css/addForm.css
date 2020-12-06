@@ -1,0 +1,55 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+}
+
+input {
+    height: 25px;
+    width: 200px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.labels {
+    text-align: left;
+    display: inline-block;
+}
+
+.boxes {
+    background-color: #ffffe6;
+    float: center;
+    border: 1px;
+    border-style: solid;
+    border-color: #0066cc;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 17px;
+}
+
+.buttons {
+    background-color: #ffffe6;
+    float: center;
+    border: 1px;
+    border-style: solid;
+    border-color: #8080ff;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 16px;
+    font-weight: bold;
+}
+
+
+
+.column {
+    column-count: 2;
+}

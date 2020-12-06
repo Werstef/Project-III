@@ -1,0 +1,5 @@
+In order to connect the Database files to the project it is needed to copy and paste the .mdf and .ldf file in the localhost folder(usually Users\user).
+Try to run the project, it should work without a problem, if it has a problem loading the database, create a new one using the Tools->Nuget Console.
+"Add-Migration Migration1 -context KristMedV2DbContext"
+"Update-Database -context KristMedV2DbContext"
+Message me if problems arise though I hope it will work without a problem.

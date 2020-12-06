@@ -1,0 +1,79 @@
+﻿@using KristMedv2.Models.Clients;
+@model ClientAddContactMessageViewModel;
+@{
+    ViewData["Title"] = "AddContactMessage";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Krist Med</title>
+    @*<link rel="stylesheet" type="text/css" href="~/css/Contact.css?v=<%= DateTime.Now.Ticks %" />*@
+    <link rel="stylesheet" href="~/css/addForm.css?v=<%= DateTime.Now.Ticks %" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">*@
+
+</head>
+
+
+<body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div style="text-align:center">
+
+        <br>
+
+
+        <div>
+            @*<h3>Contact</h3>
+                <hr style="color:#0099ff">
+
+                <br>
+
+                <div class='text'>
+                    <p>Pentru orice întrebări aveți, ne puteți suna la numerele de telefon 0351 xxx xxx și 0251 xxx xxx între orele 9 și 17 în zilele lucrătoare sau ne puteți trimite un email mai jos.</p>
+
+                </div>
+
+                <h3 id="bold">Unde se află Krist Medica</h3>
+
+                <br>
+
+                <img src="Resources/map.png">*@
+
+            @*<h3 id="bold">Contactare prin Email</h3>
+
+                <div class='text'>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Centrul Krist Medica din Craiova se află pe Aleea xx yy la numărul z.</p>
+
+                </div>*@
+
+            <div class="form">
+                <form asp-action="AddContactMessage" method="post">
+                    <div id="content_info">
+                        <label for="FullName"><b class="contact_form">Numele dumneavoastră<span class="required">*</span></b></label>
+                        <input asp-for="FullName" class="boxes" type="text" id="full_name" name="FullName" placeholder="Nume + Prenume" required><br>
+                        <label for="email"><b class="contact_form">Email<span class="required">*</span></b></label>
+                        <input asp-for="Email" class="boxes" type="text" id="email" name="email" placeholder="xxx@xxx.xx" required><br>
+                        <label for="subiect"><b class="contact_form">Subiect<span class="required">*</span></b></label>
+                        <input class="boxes" type="tel" id="subiect" name="subiect" placeholder="Subiect" required><br>
+                        <label for="descriere"><p class="contact_form">Mesajul Dumneavoastra<span class="required">*</span></p></label>
+                        <textarea asp-for="Description" id="descriere" rows="15" cols="50" placeholder="..."></textarea>
+                    </div>
+                    <br>
+                    <div >
+                        <button type="submit" class="buttons">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

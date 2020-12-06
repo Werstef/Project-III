@@ -1,0 +1,72 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using KristMedv2.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KristMedv2</title>
+    <link rel="stylesheet" href="~/css/layout.css?v=<%= DateTime.Now.Ticks %" />
+
+</head>
+<body>
+    <header>
+        <div class="menu">
+
+            @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+            {
+                <a asp-area="" asp-controller="Admins" asp-action="EditAccount">Edit Admin</a>
+                <a asp-area="" asp-controller="Admins" asp-action="ContactMessages">Messages Admin</a>
+                <a asp-area="" asp-controller="Admins" asp-action="AddMedicine">Add Medicine</a>
+                <a asp-area="" asp-controller="Admins" asp-action="Medicine">Medicine</a>
+                <a asp-area="" asp-controller="Admins" asp-action="AddEquipment">Add Equipment</a>
+                <a asp-area="" asp-controller="Admins" asp-action="Equipment">Equipment</a>
+                <a asp-area="" asp-controller="Admins" asp-action="AddAppointment">Add Appointment</a>
+                <a asp-area="" asp-controller="Admins" asp-action="Appointment">Appointments</a>
+
+            }
+            else if (SignInManager.IsSignedIn(User) && User.IsInRole("Client"))
+            {
+                <a asp-area="" asp-controller="Clients" asp-action="EditAccount">Edit Client</a>
+                <a asp-area="" asp-controller="Clients" asp-action="ContactMessages">Messages Client</a>
+                <a asp-area="" asp-controller="Clients" asp-action="AddContactMessage">Send Message</a>
+                <a asp-area="" asp-controller="Clients" asp-action="PastAppointments">Past Client Appointments</a>
+                <a asp-area="" asp-controller="Clients" asp-action="FutureAppointments">Future Client Appointments</a>
+                <a asp-area="" asp-controller="Clients" asp-action="SearchAppointments">Search Appointments</a>
+
+
+            }
+            else if (SignInManager.IsSignedIn(User) && User.IsInRole("Medic"))
+            {
+                <a asp-area="" asp-controller="Medics" asp-action="FutureAppointments">Future App</a>
+                <a asp-area="" asp-controller="Medics" asp-action="PastAppointments">Past App</a>
+                <a asp-area="" asp-controller="Medics" asp-action="AppointmentsTreatment">AppTreatment</a>
+            }
+            else
+            {
+                <a asp-area="" asp-controller="Home" asp-action="Index">KristMed</a>
+            }
+
+        </div>
+        <div>
+            <partial name="_LoginPartial" />
+        </div>
+        <br />
+
+    </header>
+    <div >
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
