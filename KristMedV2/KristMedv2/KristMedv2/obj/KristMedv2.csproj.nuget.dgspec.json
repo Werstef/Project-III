@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2\\KristMedv2.csproj": {}
+    "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2\\KristMedv2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj": {
+    "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj",
+        "projectUniqueName": "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj",
         "projectName": "KristMedv2.ApplicationLogic",
-        "projectPath": "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj",
+        "projectPath": "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj",
         "packagesPath": "C:\\Users\\Werstef\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\obj\\",
+        "outputPath": "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -78,14 +78,14 @@
         }
       }
     },
-    "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.DataAccess\\KristMedv2.DataAccess.csproj": {
+    "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.DataAccess\\KristMedv2.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.DataAccess\\KristMedv2.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.DataAccess\\KristMedv2.DataAccess.csproj",
         "projectName": "KristMedv2.DataAccess",
-        "projectPath": "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.DataAccess\\KristMedv2.DataAccess.csproj",
+        "projectPath": "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.DataAccess\\KristMedv2.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Werstef\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -104,8 +104,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj": {
-                "projectPath": "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj"
+              "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj": {
+                "projectPath": "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj"
               }
             }
           }
@@ -154,14 +154,14 @@
         }
       }
     },
-    "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2\\KristMedv2.csproj": {
+    "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2\\KristMedv2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2\\KristMedv2.csproj",
+        "projectUniqueName": "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2\\KristMedv2.csproj",
         "projectName": "KristMedv2",
-        "projectPath": "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2\\KristMedv2.csproj",
+        "projectPath": "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2\\KristMedv2.csproj",
         "packagesPath": "C:\\Users\\Werstef\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2\\obj\\",
+        "outputPath": "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -180,8 +180,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.DataAccess\\KristMedv2.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.DataAccess\\KristMedv2.DataAccess.csproj"
+              "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.DataAccess\\KristMedv2.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.DataAccess\\KristMedv2.DataAccess.csproj"
               }
             }
           }

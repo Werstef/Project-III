@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj": {}
+    "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj": {
+    "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj",
+        "projectUniqueName": "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj",
         "projectName": "KristMedv2.ApplicationLogic",
-        "projectPath": "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj",
+        "projectPath": "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\KristMedv2.ApplicationLogic.csproj",
         "packagesPath": "C:\\Users\\Werstef\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\obj\\",
+        "outputPath": "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2.ApplicationLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

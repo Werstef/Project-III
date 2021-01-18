@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/aWqZLTEKw8B4zTxXimQkecz22ucQH3jA057TpjiAdOK2tRE/aV8nLwt+ON8mpBykptNQswoDzm8lB+zZ60itQ==",
+  "dgSpecHash": "R0jXpi3UbJDgRc5JzEsbyDQo7RyP3SId7LEeLw7ekzzl0UWZb/PfWy6p9g6TMcMSgz2uVvgMujmg6DMU4WK1qg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Werstef\\Desktop\\WadPresentationKristMedv2\\KristMedV2\\KristMedv2\\KristMedv2\\KristMedv2.csproj",
+  "projectFilePath": "C:\\Users\\Werstef\\Desktop\\KristMedv2\\KristMedV2\\KristMedv2\\KristMedv2\\KristMedv2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Werstef\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Werstef\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
